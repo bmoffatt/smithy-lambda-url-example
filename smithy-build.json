@@ -1,0 +1,21 @@
+{
+    "version": "1.0",
+    "maven": {
+        "repositories": [
+            { "url": "https://repo.maven.apache.org/maven2" },
+            { "url": "https://idkbuckit.s3.us-west-2.amazonaws.com" }
+        ],
+        "dependencies": [
+            "software.amazon.smithy:smithy-aws-traits:1.30.0",
+            "software.amazon.smithy:smithy-aws-iam-traits:1.30.0",
+            "com.bryanmoffatt:smithy-aws-go:0.0.1",
+            "software.amazon.smithy.go:smithy-go-codegen:0.1.0"
+        ]
+    },
+    "plugins": {
+        "go-codegen": {
+            "service": "example.hello#Hello",
+            "module": "github.com/bmoffatt/smithy-lambda-url-example/model"
+        }
+    }
+}
