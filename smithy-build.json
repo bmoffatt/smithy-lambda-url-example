@@ -3,7 +3,7 @@
     "maven": {
         "repositories": [
             { "url": "https://repo.maven.apache.org/maven2" },
-            { "url": "https://idkbuckit.s3.us-west-2.amazonaws.com" }
+            { "url": "http://smithy-go-maven.bryanmoffatt.com" }
         ],
         "dependencies": [
             "software.amazon.smithy:smithy-aws-traits:1.30.0",
